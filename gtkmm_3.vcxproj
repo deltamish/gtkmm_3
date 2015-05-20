@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1BF9CCA7-9155-41CE-B7C1-C235413E68F4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gtkmm_3</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Karthik\gtkmm3\GTKmmStack36\include\gtk+-3.7.2;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\libsigc++-2.3.1;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glibmm-2.34.1\glib;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glibmm-2.34.1;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glib-2.35.1\glib;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\gtkmm-3.6.0\gdk;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glibmm-2.34.1\gio;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glib-2.35.1;C:\Users\Karthik\gtkmm3\GTKmmStack36\include;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\gtkmm-3.6.0\gtk;$(IncludePath)$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Karthik\gtkmm3\GTKmmStack36\win32\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Karthik\gtkmm3\GTKmmStack36\include\gtk+-3.7.2;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\libsigc++-2.3.1;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glibmm-2.34.1\glib;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glibmm-2.34.1;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glib-2.35.1\glib;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\gtkmm-3.6.0\gdk;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glibmm-2.34.1\gio;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\glib-2.35.1;C:\Users\Karthik\gtkmm3\GTKmmStack36\include;C:\Users\Karthik\gtkmm3\GTKmmStack36\include\gtkmm-3.6.0\gtk;$(IncludePath)$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Karthik\gtkmm3\GTKmmStack36\win32\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>-IC:/gtkmm3.0/include/gtk-3.0 -IC:/gtkmm3.0/include/cairo -IC:/gtkmm3.0/include/pango-1.0 -IC:/gtkmm3.0/include/atk-1.0 -IC:/gtkmm3.0/include/cairo -IC:/gtkmm3.0/include/pixman-1 -IC:/gtkmm3.0/include -IC:/gtkmm3.0/include/freetype2 -IC:/gtkmm3.0/include -IC:/gtkmm3.0/include/libpng15 -IC:/gtkmm3.0/include/gdk-pixbuf-2.0 -IC:/gtkmm3.0/include/libpng15 -IC:/gtkmm3.0/include/glib-2.0 -IC:/gtkmm3.0/lib/glib-2.0/include 
+ %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/libpath:C:\Users\Karthik\gtkmm3\GTKmmStack36\win32\lib.lib gtk-3.lib gdk-3.lib gdi32.lib imm32.lib shell32.lib ole32.lib -Wl,-luuid pangocairo-1.0.lib pangoft2-1.0.lib freetype.lib fontconfig.lib pangowin32-1.0.lib gdi32.lib pango-1.0.lib m.lib atk-1.0.lib cairo-gobject.lib cairo.lib gdk_pixbuf-2.0.lib gio-2.0.lib gobject-2.0.lib glib-2.0.lib intl.lib 
+ %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
